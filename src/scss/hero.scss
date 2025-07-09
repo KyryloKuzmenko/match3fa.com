@@ -1,0 +1,67 @@
+.hero-section .hero-content-wrap {
+  background-image: url('../img/mobile/hero-mobile.png');
+  background-repeat: no-repeat;
+  background-size: 375px 229px;
+  display: flex;
+  flex-direction: column;
+  @include media(desktop) {
+    background-image: url('../img/desktop/hero-desktop.png');
+    background-size: cover;
+    height: 761px;
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 81px;
+  @include media(desktop) {
+    margin-top: 200px;
+  }
+}
+
+.hero-litle {
+  @include media(desktop) {
+    width: 100%;
+    max-width: 1096px;
+  }
+}
+
+.hero-text {
+  margin-top: 16px;
+  text-align: center;
+  @include media(desktop) {
+    font-size: 32px;
+    margin-top: 48px;
+    width: 100%;
+    max-width: 1088px;
+  }
+}
+
+.hero-join-link {
+  font-family: 'Madimi One', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #272a5e;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 16px 32px;
+  width: 194px;
+  height: 50px;
+  background: #fffb5b;
+  margin-top: 24px;
+
+  @include media(desktop) {
+    width: 287px;
+    height: 64px;
+    font-size: 24px;
+    margin-top: 48px;
+  }
+}

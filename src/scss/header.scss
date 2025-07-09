@@ -1,13 +1,85 @@
-
-.backdrop {
+.header-section {
   position: fixed;
-  top: 75px;
   left: 0;
   right: 0;
-  height: 100%;
+  z-index: 1000;
+  @include media(desktop) {
+    height: 60px;
+  }
+}
+
+.header-section .header-content-wrap {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  align-items: center;
+  padding-top: 5px;
+  @include media(desktop) {
+    padding-top: 15px;
+  }
+}
+
+.header-logo {
+  width: 41px;
+  height: 18px;
+  @include media(desktop) {
+    width: 130px;
+    height: 61px;
+  }
+}
+
+.burger-menu {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.header-list {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 110px;
+  }
+}
+
+.header-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+
+  border-radius: 15px;
+  padding: 10px 16px;
+  background: #a9ccee;
+  outline: 2px solid #6cb5ff;
+  outline-offset: -1px;
+}
+
+.header-link {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #255eab;
+}
+
+.header-section .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
   margin: 0 auto;
   z-index: 1001;
-  background: #f6f6f6;
+  background: #0d4378;
   opacity: 0;
   visibility: hidden;
 }
