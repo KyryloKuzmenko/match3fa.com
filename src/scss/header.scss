@@ -76,10 +76,12 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 50%;
   margin: 0 auto;
   z-index: 1001;
   background: #0d4378;
+  border-radius: 0 0 20px 20px;
+  width: 375px;
+  height: 399px;
   opacity: 0;
   visibility: hidden;
 }
@@ -89,4 +91,39 @@
   visibility: visible;
   display: flex;
   justify-content: center;
+}
+
+.close-menu {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+}
+
+.backdrop-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  margin-right: auto;
+}
+
+.backdrop-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+}
+
+.backdrop-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #73afff;
 }

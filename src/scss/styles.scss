@@ -43,6 +43,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   color: #255eab;
+  line-height: 1.5;
   @include media(desktop) {
     font-size: 24px;
   }

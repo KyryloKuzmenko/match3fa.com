@@ -1,0 +1,24 @@
+.about-section .about-content-wrap {
+  background-image: url('../img/mobile/about-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @include media(desktop) {
+    background-image: url('../img/desktop/about-bg-desktop.png');
+    padding-top: 148px;
+  }
+}
+
+.about-text {
+  margin-top: 16px;
+
+  @include media(desktop) {
+    max-width: 1096px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
