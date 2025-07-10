@@ -1,0 +1,142 @@
+.reviews-content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @include media(desktop) {
+    padding-bottom: 100px;
+  }
+}
+
+.reviews-text {
+  margin-top: 16px;
+  text-align: center;
+  @include media(desktop) {
+    font-size: 32px;
+    margin-top: 32px;
+  }
+}
+
+.reviews-list-title {
+  margin-top: 24px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: #255eab;
+  @include media(desktop) {
+    font-size: 24px;
+    margin-top: 32px;
+  }
+}
+
+.reviews-list {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include media(desktop) {
+    flex-direction: row;
+    margin-top: 32px;
+  }
+}
+
+.reviews-list-item {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+  border-radius: 20px;
+  padding: 20px;
+  background: linear-gradient(180deg, #7abbfb 0%, #0d4378 100%);
+  @include media(desktop) {
+      width: 100%; 
+  max-width: 426px; 
+
+  }
+}
+
+.reviews-list-subtitle {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #072348;
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.reviews-list-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #072348;
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.reviews-list-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reviews-star {
+  width: 60px;
+  height: 60px;
+}
+
+.reviews-read-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.reviews-more-text {
+  display: flex;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #73aefd;
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+.reviews-arrow {
+  width: 16px;
+  height: 16px;
+  @include media(desktop) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.reviews-browse-all {
+  border-radius: 20px;
+  padding: 16px 32px;
+  width: 183px;
+  height: 50px;
+  background: #fffb5b;
+
+  font-family: 'Madimi One', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #272a5e;
+  margin-top: 25px;
+  @include media(desktop) {
+    margin-top: 50px;
+    width: 267px;
+    height: 64px;
+    font-size: 24px;
+  }
+}
+
+.reviews-list-span {
+  @include media(desktop) {
+    height: 34px;
+  }
+}

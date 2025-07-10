@@ -2,10 +2,10 @@
 @import './hero.scss';
 @import './about.scss';
 @import './reviews.scss';
+@import './ranking.scss';
 @import './strategy-hub.scss';
 @import './events.scss';
 @import './leaderboard.scss';
-@import './join-community.scss';
 @import './contact.scss';
 @import './cookies-modal.scss';
 @import './footer.scss';
@@ -44,6 +44,7 @@ body {
   font-size: 12px;
   color: #255eab;
   line-height: 1.5;
+  background-color: #1E1E1E;
   @include media(desktop) {
     font-size: 24px;
   }

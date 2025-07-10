@@ -1,0 +1,153 @@
+.events-section .events-content-wrap {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url('../img/mobile/events-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -50px;
+  @include media(desktop) {
+    background-image: url('../img/desktop/events-bg-desktop.png');
+    background-position: center right -50px;
+    padding-bottom: 100px;
+  }
+}
+
+.events-text {
+  text-align: center;
+  margin-top: 16px;
+  position: relative;
+  z-index: 2;
+  @include media(desktop) {
+    margin-top: 32px;
+    font-size: 32px;
+  }
+}
+
+.events-content {
+  display: flex;
+  flex-direction: column;
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 105px;
+    align-items: center;
+    margin-top: 32px;
+  }
+}
+
+.events-text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(desktop) {
+    align-items: self-start;
+  }
+}
+
+.events-list-title {
+  margin-top: 13px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: left;
+  color: #255eab;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.events-list {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+  @include media(desktop) {
+    margin-top: 32px;
+  }
+}
+
+.events-girl {
+  position: absolute;
+  width: 152px;
+  height: 203px;
+  top: 100px;
+  right: 0;
+  z-index: 1;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.events-list-item {
+  display: flex;
+  gap: 25px;
+  @include media(desktop) {
+    width: 450px;
+  }
+}
+
+.events-img-radio {
+  width: 20px;
+  height: 20px;
+  @include media(desktop) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.events-link {
+  margin-top: 25px;
+  border-radius: 20px;
+  padding: 16px 32px;
+  width: 202px;
+  height: 50px;
+  background: #fffb5b;
+
+  font-family: 'Madimi One', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #272a5e;
+  @include media(desktop) {
+    width: 301px;
+    height: 64px;
+    font-size: 24px;
+    margin-top: 48px;
+    margin-right: auto;
+  }
+}
+
+.event-bottom-notice {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  @include media(desktop) {
+    margin-right: auto;
+  }
+}
+
+.events-diamond {
+  width: 68px;
+  height: 60px;
+  @include media(desktop) {
+    width: 108px;
+    height: 96px;
+  }
+}
+
+.event-botom-text {
+  text-align: center;
+  @include media(desktop) {
+    font-size: 24px;
+    width: 645px;
+  }
+}

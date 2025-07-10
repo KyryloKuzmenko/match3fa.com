@@ -1,4 +1,4 @@
-.strategy-hub-content-wrap {
+.ranking-content-wrap {
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
   }
 }
 
-.strategy-hub-text {
+.ranking-text {
   text-align: center;
   margin-top: 16px;
   @include media(desktop) {
@@ -17,29 +17,27 @@
   }
 }
 
-.strategy-hub-content {
+.ranking-content {
   display: flex;
   flex-direction: column;
   @include media(desktop) {
-    flex-direction: row-reverse;
-    gap: 200px;
+    flex-direction: row;
+    gap: 105px;
     align-items: center;
     margin-top: 32px;
-    
   }
 }
 
-.strategy-hub-text-wrap {
+.ranking-text-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   @include media(desktop) {
     align-items: self-start;
-    
   }
 }
 
-.strategy-hub-list-title {
+.ranking-list-title {
   margin-top: 13px;
   font-weight: 700;
   font-size: 12px;
@@ -51,7 +49,7 @@
   }
 }
 
-.strategy-hub-list {
+.ranking-list {
   margin-top: 25px;
   display: flex;
   flex-direction: column;
@@ -61,7 +59,7 @@
   }
 }
 
-.strategy-hub-list-item {
+.ranking-list-item {
   display: flex;
   gap: 25px;
   @include media(desktop) {
@@ -69,7 +67,7 @@
   }
 }
 
-.strategy-hub-img-radio {
+.ranking-img-radio {
   width: 20px;
   height: 20px;
   @include media(desktop) {
@@ -78,7 +76,7 @@
   }
 }
 
-.strategy-hub-link {
+.ranking-link {
   margin-top: 25px;
   border-radius: 20px;
   padding: 16px 32px;
@@ -99,14 +97,15 @@
 }
 
 
-.strategy-hub-img-desktop {
+
+.ranking-img-desktop {
+  display: block;
+  height: auto;
   margin-top: 30px;
+  min-width: 0;   
   @include media(desktop) {
-    display: block;
-    width: 100%;
-    max-width: 558px;
-    height: 558px;
     margin-top: 0;
-    
+      width: 100%;
+  max-width: 758px;
   }
 }
