@@ -1,0 +1,99 @@
+.cookie-modal .cookies-wrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0d4378;
+  border-radius: 20px 20px 0 0;
+  height: 470px;
+  z-index: 9999;
+  display: none;
+  flex-direction: column;
+  padding-top: 32px;
+  @include media(desktop) {
+    height: 376px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 90px;
+    align-items: baseline;
+  }
+}
+.cookies-wrap .cookies-title {
+  font-family: 'Madimi One', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #73afff;
+  @include media(desktop) {
+    font-size: 64px;
+  }
+}
+
+.cookies-modal-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #73afff;
+  margin-top: 24px;
+  @include media(desktop) {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+}
+
+.cookies-btn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 50px;
+  @include media(desktop) {
+    gap: 40px;
+    margin-top: 0;
+  }
+}
+
+.cookies-accept {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 16px 48px;
+  width: 262px;
+  height: 53px;
+  background: #7dbfff;
+
+  font-family: 'Madimi One', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f8f8f8;
+  @include media(desktop) {
+    font-size: 24px;
+    width: 279px;
+    height: 64px;
+  }
+}
+
+.cookies-decline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 16px 48px;
+  width: 262px;
+  height: 53px;
+  background: #2972b8;
+
+  font-family: 'Madimi One', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f8f8f8;
+  @include media(desktop) {
+    font-size: 24px;
+    width: 279px;
+    height: 64px;
+  }
+}
